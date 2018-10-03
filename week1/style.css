@@ -1,0 +1,77 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+html {
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #d9d6f7, white);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+
+h1 {
+    color: #000080;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: #000080;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    display: block;
+    overflow: auto;
+}
+
+.mainContainer {
+    margin: 30 30 30 30px;
+    width: auto;
+}
+
+.leftContainer {
+    width: 48%;
+    float: left;
+}
+
+.rightContainer {
+    width: 48%;
+    float: right;
+}
+
+.codeBox {
+    border:1px solid black;
+    background-color:#EEEEFF;
+    padding:10px;
+    font-size:0.9em;
+    display: block;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 480px) {
+    .leftContainer {
+        width: auto;
+        float: none;
+    }
+
+    .rightContainer {
+        width: auto;
+        float: none;
+    }
+}

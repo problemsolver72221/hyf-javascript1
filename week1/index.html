@@ -1,0 +1,309 @@
+<!DOCTYPE = html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript Week 01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h1>Javascript Week 1 Homework</h1>
+        <hr>
+        <div class="leftContainer">
+            <ul>
+                <li>
+                    <h2>01 # Hello World</h2>
+                    <hr>
+                    <div class="codeBox">
+                        <p>//Saying Hello to the world. \n helps to show each of them in different lines.<br>
+                            <br>
+
+                            var sayingHi = "Selam Dünya!\nHello World!\nHej Världen!"<br>
+                            console.log(sayingHi);<br>
+                            <br>
+                            /*Result: <br>
+                            <br>
+                            Selam Dünya!<br>
+                            Hello World!<br>
+                            Hej Världen!<br>
+                            <br>
+                            */<br></p>
+                    </div>
+                </li>
+                <li>
+                    <h2>02 # Syntax Error</h2>
+                    <hr>
+                    <div class="codeBox">
+                        <p>/* console.log('I'm awesome'); <br>
+                            <br>
+                            Doesn't work: "SyntaxError: missing ) after argument list"<br>
+                            <br>
+                            */<br>
+                            <br>
+                            console.log('I\'m awesome');<br>
+                            <br>
+                            /* Result:<br>
+                            <br>
+                            I'm awesome<br>
+                            <br>
+                            */<br></p>
+                    </div>
+                </li>
+                <li>
+                    <h2>03 # Integer Variable</h2>
+                    <hr>
+                    <div class="codeBox">
+                        <p>var x<br>
+                            console.log('the value of my variable x will be: whateverYouThinkItWillLog');<br>
+                            console.log(x);<br>
+                            var x = 7<br>
+                            console.log('the value of my variable x will be: ' + x +'');<br>
+                            console.log(x);<br>
+                            <br>
+                            /*Result:<br>
+                            <br>
+                            the value of my variable x will be: whateverYouThinkItWillLog<br>
+                            undefined<br>
+                            the value of my variable x will be: 7<br>
+                            7<br>
+                            <br>
+                            */<br></p>
+                    </div>
+                </li>
+                <li>
+                    <h2>04 # String Variable</h2>
+                    <hr>
+                    <div class="codeBox">
+                        <p>var y = "Kanelbulle"<br>
+                            console.log('the value of my string will be: '+ y +'');<br>
+                            console.log(y);<br>
+                            var y = "Kaffe"<br>
+                            console.log('the value of my string will be: '+ y +'');<br>
+                            console.log(y);<br>
+                            <br>
+                            /*Result:<br>
+                            <br>
+                            the value of my string will be: Kanelbulle<br>
+                            Kanelbulle<br>
+                            the value of my string will be: Kaffe<br>
+                            Kaffe<br>
+                            <br>
+                            */<br></p>
+                    </div>
+                </li>
+                <li>
+                    <h2>05 # Rounding Number</h2>
+                    <hr>
+                    <div class="codeBox">
+                        <p>var z = 7.25<br>
+                            console.log(z);<br>
+                            var a = 8<br>
+                            console.log(a);<br>
+                            var maximum = Math.max(z,a);<br>
+                            console.log(maximum);<br>
+                            <br>
+                            /*Result:<br>
+                            <br>
+                            7.25<br>
+                            8<br>
+                            8<br>
+                            <br>
+                            */<br></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="rightContainer">
+            <ul>
+                <li>
+                    <h2>06 # Arrays</h2>
+                    <hr>
+                    <div class="codeBox">
+                        <p>var colorsArray = ["blue","red","white","yellow","black"]<br>
+                            console.log('the values of my array will be: '+ colorsArray +'');<br>
+                            console.log(colorsArray);<br>
+                            var favAnimals = ["falcon","lion","cat","dog"]<br>
+                            console.log(favAnimals);<br>
+                            favAnimals.push('baby pig');<br>
+                            console.log(favAnimals);<br>
+                            <br>
+                            /*Result:<br>
+                            <br>
+                            the values of my array will be: blue,red,white,yellow,black<br>
+                            [ 'blue', 'red', 'white', 'yellow', 'black' ]<br>
+                            [ 'falcon', 'lion', 'cat', 'dog' ]<br>
+                            [ 'falcon', 'lion', 'cat', 'dog', 'baby pig' ]<br>
+                            <br>
+                            */<br></p>
+                    </div>
+                </li>
+                <li>
+                    <h2>07 # String Length</h2>
+                    <hr>
+                    <div class="codeBox">
+                        <p>let myString = "this is a test"<br>
+                            console.log(myString);<br>
+                            myStringLength = myString.length;<br>
+                            console.log(myStringLength);<br>
+                            <br>
+                            /* Result:<br>
+                            <br>
+                            this is a test<br>
+                            14<br>
+                            <br>
+                            */<br></p>
+                    </div>
+                </li>
+                <li>
+                    <h2>08 # Sorting Variables by Value Type</h2>
+                    <hr>
+                    <div class="codeBox">
+                        <p>let a = "Space"<br>
+                            let b = 3.14<br>
+                            let c = true<br>
+                            let d = [1, "sky"]<br>
+                            let e = false<br>
+
+                            console.log('The value of my variable a is: ' + a + '');<br>
+                            console.log('The value of my variable b is: ' + b + '');<br>
+                            console.log('The value of my variable c is: ' + c + '');<br>
+                            console.log('The value of my variable d is: ' + d + '');<br>
+                            console.log('The value of my variable d is: ' + e + '');<br>
+                            <br>
+                            let aType = typeof a<br>
+                            let bType = typeof b<br>
+                            let cType = typeof c<br>
+                            let dType = typeof d<br>
+                            let eType = typeof e<br>
+                            <br>
+                            console.log('Type of the a variable is: ' + aType);<br>
+                            console.log('Type of the b variable is: ' + bType);<br>
+                            console.log('Type of the c variable is: ' + cType);<br>
+                            console.log('Type of the d variable is: ' + dType);<br>
+                            console.log('Type of the e variable is: ' + eType);<br>
+                            <br>
+                            let typeArray = [aType, bType, cType, dType, eType]<br>
+                            console.log('This is an array of all data types:', typeArray);<br>
+                            <br>
+                            let sortedArray = typeArray.slice().sort();<br>
+                            let sameTypeArray = [];<br>
+                            let sameNr = 0;<br>
+                            let uniqueArray = [];<br>
+                            let uniqueNr = 0;<br>
+                            <br>
+                            console.log('This is sorted version of the array:', sortedArray);<br>
+                            <br>
+                            for (i = 0; i < sortedArray.length; i++) {<br>
+                                <br>
+                                if (sortedArray[i] == sortedArray[i + 1]) {<br>
+                                sameTypeArray.push(sortedArray[i]);<br>
+                                sameNr += 1;<br>
+                                }<br>
+                                <br>
+                                if (sortedArray[i] != sortedArray[i + 1]) {<br>
+                                uniqueArray.push(sortedArray[i]);<br>
+                                uniqueNr += 1;<br>
+                                }<br>
+                                <br>
+                                }<br>
+                                <br>
+                                console.log('There is ' +sameNr+ ' SAME TYPE of variable in the array! Which is:
+                                '+sameTypeArray);<br>
+                                console.log('There are ' +uniqueNr+ ' UNIQUE variables in the array! Which are: '
+                                +uniqueArray);<br>
+                                <br>
+                                /*Result:<br>
+                                <br>
+                                The value of my variable a is: Space<br>
+                                The value of my variable b is: 3.14<br>
+                                The value of my variable c is: true<br>
+                                The value of my variable d is: 1,sky<br>
+                                The value of my variable d is: false<br>
+                                Type of the a variable is: string<br>
+                                Type of the b variable is: number<br>
+                                Type of the c variable is: boolean<br>
+                                Type of the d variable is: object<br>
+                                Type of the e variable is: boolean<br>
+                                This is an array of all data types: [ 'string', 'number', 'boolean', 'object',
+                                'boolean' ]<br>
+                                This is sorted version of the array: [ 'boolean', 'boolean', 'number', 'object',
+                                'string' ]<br>
+                                There is 1 SAME TYPE of variable in the array! Which is: boolean<br>
+                                There are 4 UNIQUE variables in the array! Which are: boolean,number,object,string<br>
+                                <br>
+                                */<br></p>
+                    </div>
+                </li>
+                <li>
+                    <h2>09 # Modulus % (Remainder)</h2>
+                    <hr>
+                    <div class="codeBox">
+                        <p>var x = 7;<br>
+                            console.log('The value of ' + x + ' % ' + 3 + ' is: ' + (x % 3), <br>'\nWhich means
+                            remainder
+                            operator returns the remainder left over when one operand is divided by a second
+                            operand.\nIt always takes the sign of the dividend.<br>\nSimilar examples below: ');<br>
+                            <br>
+                            console.log('The value of (16 % 4) is: ' + 16 % 4);<br>
+                            console.log('The value of (25 % 7) is: ' + 25 % 7);<br>
+                            console.log('The value of (51 % 10) is: ' + 51 % 10);<br>
+                            <br>
+                            /*Result:<br>
+                            <br>
+                            The value of 7 % 3 is: 1 <br>
+                            Which means remainder operator returns the remainder left over when one operand is divided
+                            by a second operand.<br>
+                            It always takes the sign of the dividend.<br>
+                            Similar examples below: <br>
+                            The value of (16 % 4) is: 0<br>
+                            The value of (25 % 7) is: 4<br>
+                            The value of (51 % 10) is: 1<br>
+                            <br>
+                            */<br></p>
+                    </div>
+                </li>
+                <li>
+                    <h2>10 # Multiple Type Array & Comparing Infinity</h2>
+                    <hr>
+                    <div class="codeBox">
+                        <p>var arrayStore = []<br>
+                            arrayStore.push(1,"HackYourFuture",["Kaffe",true,3.14],false);<br>
+                            <br>
+                            console.log('Here is what we have inside the array: '+arrayStore);<br>
+                            <br>
+                            console.log('And here are the types of variables: ',typeof arrayStore[0], typeof
+                            arrayStore[1], typeof arrayStore[2], '--Wait! This object have some elements
+                            inside.\nLet\'s check them: --',typeof arrayStore[2][0], typeof arrayStore[2][1],
+                            typeof arrayStore[2][2], '--object list is done.', typeof arrayStore[3]);
+                            <br>
+                            <br>
+
+                            var comparing = (6/0)/(10/0);<br>
+                            console.log(comparing, typeof comparing);<br>
+                            <br>
+                            /* Result:<br>
+                            <br>
+                            Here is what we have inside the array: 1,HackYourFuture,Kaffe,true,3.14,false<br>
+                            And here are the types of variables: number string object --Wait! This object have some
+                            elements inside.<br>
+                            Let's check them: -- string boolean number --object list is done. boolean<br>
+                            NaN 'number'<br>
+                            <br>
+                            */<br></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>
